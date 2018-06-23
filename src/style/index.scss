@@ -1,0 +1,13 @@
+@import 'colors';
+body {
+  background-color: $body-color;
+  color: $font-color;
+}
+
+section {
+  display: flex;
+  p {
+    color: yellow;
+    text-transform: uppercase;
+  }
+}
