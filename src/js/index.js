@@ -1,9 +1,12 @@
-import test from "./helper-functions";
+import helpers from "./helper-functions";
 import '../style/index.scss';
+import sum from "./helper-functions";
 // import img from '../images/webpack.jpg';
 
-const start = test.hello("test");
-const end = test.goodbye("test test");
+const start = helpers.hello("test");
+const end = helpers.goodbye("test test");
+const add = helpers.sum(1, 2);
 
 console.log(start);
 console.log(end);
+console.log(add);
