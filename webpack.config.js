@@ -48,11 +48,11 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           {
-            loader: "css-loader",
+            loader: "css-loader", // translates css into common js
             options: {
               sourceMap: true
             }
-          }, // translates css into common js
+          },
           {
             loader: "postcss-loader",
             options: {
@@ -60,11 +60,11 @@ module.exports = {
             }
           },
           {
-            loader: "sass-loader",
+            loader: "sass-loader", // compiles sass to css
             options: {
               sourceMap: true
             }
-          } // compiles sass to css
+          }
         ]
       },
       {
